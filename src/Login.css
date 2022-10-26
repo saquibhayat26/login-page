@@ -1,55 +1,46 @@
 .login {
   width: 100%;
   height: 100vh;
-  background: url(./image//image.png);
+  background: url(./image/image.png);
   background-size: cover;
   background-repeat: no-repeat;
-  display: flex;
-  background-position: center;
-  justify-content: center;
-  align-items: center;
+  background-position: fixed;
   background-color: #111111;
   color: #fff;
-}
-
-.blur {
-  position: relative;
-  width: 28rem;
-  height: 32rem;
-  background-color: rgb(2, 2, 2);
-  border-radius: 8px;
-  opacity: 0.8;
-  filter: blur(2px);
-  margin-left: -28.5rem;
-  margin-top: 1rem;
-  left: 28rem;
-}
-
-.loginContainer {
-  margin-top: 2rem;
-  width: 28rem;
-  height: 30rem;
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: center;
-  border-radius: 8px;
-  position: relative;
+}
+
+.login > :nth-child(1) {
+  text-align: center;
+  font-size: 14px;
+  margin-bottom: 1rem;
+  padding: 14px;
+}
+
+.loginContainer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  height: 70vh;
+  gap: 1rem;
+  backdrop-filter: blur(4px) saturate(550%);
+  box-shadow: 0 0 10px #000;
+  padding: 8px;
+  min-width: 30%;
 }
 
 .loginContainer > h1 {
-  color: #fff;
-  margin-bottom: 1.4rem;
-  margin-top: -2rem;
-  font-size: 3rem;
+  color: rgb(255, 255, 255);
+  font-size: 2.2rem;
   letter-spacing: 1.5px;
   line-height: 2.5rem;
 }
 
 .loginContainer > p {
-  font-size: 1.2rem;
   color: #fff;
-  margin-bottom: 2.5rem;
+  margin-bottom: 1.2rem;
   word-spacing: 1px;
   letter-spacing: 1px;
   line-height: 0.5rem;
@@ -58,61 +49,47 @@
 form {
   display: flex;
   flex-direction: column;
-  padding-left: 0.4rem;
+  width: 100%;
+  padding: 0 2rem;
+}
+
+.form__input {
+  height: 3rem;
+  margin-bottom: 14px;
+  padding-left: 8px;
+  outline: none;
 }
 
 .formCheckBox {
   color: white;
-  width: 22rem;
   display: flex;
-  justify-content: flex-start;
-  margin-top: 0.5rem;
-  margin-bottom: 0.5rem;
+  align-items: center;
+  gap: 8px;
+  margin: 1rem 0 0 0;
 }
 
-.formCheckBox > input {
-  height: 1rem;
-  margin-left: -10rem;
-}
-
-.formCheckBox > span {
-  height: 1rem;
-  margin-left: -10rem;
-}
-
-input {
-  font-size: 1rem;
-  height: 4rem;
-  width: 22rem;
-  margin-bottom: 0.8rem;
-  padding: 1rem;
-  border: none;
-  border-radius: 8px;
-}
-
-form > button {
+.form__btn {
   display: flex;
   align-items: center;
   justify-content: center;
   font-size: 1rem;
   font-weight: 600;
-  color: #fff;
-  background-color: #f04037;
   letter-spacing: 1px;
   height: 3rem;
-  width: 22rem;
+  width: 100%;
   margin-bottom: 1.2rem;
   padding: 1rem;
   border: none;
-  border-radius: 8px;
+  cursor: pointer;
+  margin-top: 0.5rem;
 }
 
-form > p {
+.btn1 {
   color: #fff;
-  text-align: center;
+  background-color: #f04037;
 }
 
-form > p > span {
-  color: rgb(238, 255, 0);
-  text-align: center;
+.btn2 {
+  color: rgb(0, 0, 0);
+  background-color: #aba3a3;
 }
